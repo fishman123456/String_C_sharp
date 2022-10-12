@@ -2,11 +2,10 @@
 using System.Linq.Expressions;
 
 Console.ReadLine();
-
-Console.WriteLine("Введите Имя ");
-string name = Console.ReadLine();
 Console.WriteLine("Введите Фамилия ");
 string soname = Console.ReadLine();
+Console.WriteLine("Введите Имя ");
+string name = Console.ReadLine();
 Console.WriteLine("Введите Отчество ");
 string patronymic = Console.ReadLine();
 int var1 = 0;
@@ -14,6 +13,9 @@ int var2 = 0;
 Console.WriteLine("Введите чередование 1 - Фамилия ");
 Console.WriteLine("Введите чередование 2 - Имя ");
 Console.WriteLine("Введите чередование 3 - Отчество ");
+Console.WriteLine("Введите чередование 4 - ФИО ");
+Console.WriteLine("Введите чередование 9 - Выход ");
+Console.WriteLine("Введите чередование 0 - Очистка экрана ");
 //Console.WriteLine(name);
 //Console.WriteLine(soname);
 //Console.WriteLine(patronymic);
@@ -31,7 +33,7 @@ do
             Console.Clear();
             break;    
         case 1:
-            Console.WriteLine(name);
+            Console.WriteLine(soname);
             break;
         case 2:
             Console.WriteLine(name);
@@ -40,9 +42,22 @@ do
             Console.WriteLine(patronymic);
             break;
         case 4:
+            Console.WriteLine(soname);
+            
+            Console.WriteLine(name);
+            
+            Console.WriteLine(patronymic);
+            
+            break;
+
+        case 5:
             Console.WriteLine("Введите чередование 1 - Фамилия ");
             Console.WriteLine("Введите чередование 2 - Имя ");
             Console.WriteLine("Введите чередование 3 - Отчество ");
+            Console.WriteLine("Введите чередование 4 - ФИО ");
+            Console.WriteLine("Введите чередование 9 - Выход ");
+
+            Console.WriteLine("Введите чередование 0 - Очистка экрана ");
             break;
         case 9:
             break;
