@@ -11,6 +11,9 @@ Console.WriteLine("Введите Отчество ");
 string patronymic = Console.ReadLine();
 int var1 = 0;
 int var2 = 0;
+Console.WriteLine("Введите чередование 1 - Фамилия ");
+Console.WriteLine("Введите чередование 2 - Имя ");
+Console.WriteLine("Введите чередование 3 - Отчество ");
 //Console.WriteLine(name);
 //Console.WriteLine(soname);
 //Console.WriteLine(patronymic);
@@ -20,9 +23,7 @@ int var2 = 0;
 //Console.WriteLine("1 ФИ");
 do
 {
-    Console.WriteLine("Введите чередование 1 - Фамилия ");
-    Console.WriteLine("Введите чередование 2 - Имя ");
-    Console.WriteLine("Введите чередование 3 - Отчество ");
+    Console.WriteLine("Выберите режим вывода");
     var1 = Int32.Parse(Console.ReadLine());
     switch (var1)
     {
@@ -37,6 +38,11 @@ do
             break;
         case 3:
             Console.WriteLine(patronymic);
+            break;
+        case 4:
+            Console.WriteLine("Введите чередование 1 - Фамилия ");
+            Console.WriteLine("Введите чередование 2 - Имя ");
+            Console.WriteLine("Введите чередование 3 - Отчество ");
             break;
         case 9:
             break;
